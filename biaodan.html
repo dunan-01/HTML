@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biaodan</title>
+</head>
+<body>
+    <form action="xxx.php" method="get" target="_blank">
+        <label for="name">用户名：</label> <input type="text" name="username" value="请输入用户名" maxlength="6" id="name"> <br >
+        密码： <input type="password" name="password"> <br>
+        <!-- 单选按钮和复选框可以设置checked属性，当用户打开网页默认打钩 -->
+
+        性别： <input type="radio" name="sex" value="男" id="man"> <label for="man">男</label> <input type="radio" name="sex" value="女" checked="checked" id="woman" > <label for="woman">女</label> <br>
+        爱好： 吃饭 <input type="checkbox" name="hobby" value="吃饭"> 睡觉 <input type="checkbox" name="hobby" value="睡觉"> 打豆豆 <input type="checkbox" name="hobby" value="打豆豆"> <br>
+        <input type="submit" value="免费注册"><br>
+        <input type="reset" value="重新填写">
+        <input type="button" value="获取短信验证"><br>
+        上传头像： <input type="file"> <br>
+        籍贯: <select>
+            <option>山东</option>
+            <option>天津 </option>
+            <option selected="selected">江苏 </option>
+        </select> <br>
+        今日反馈：<textarea cols="50" rows="5">hhhh</textarea>
+    </form>
+</body>
+</html>
