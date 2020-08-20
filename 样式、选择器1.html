@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外部样式表</title>
+    <link rel="stylesheet" href="yangshi.css">
+    <style>
+        /* 我想要把ol中的小li选出来改为pink */
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+
+        /* 选亲儿子，子元素选择器 */
+        .son>a {
+            color: red;
+        }
+
+        /*要求1： 把熊大和熊二改成粉色 */
+        /* div,
+        p {
+            color: pink;
+        } */
+
+        /* 要求2：把熊大熊二改成粉色，小猪一家改成粉色 */
+        .big,
+        p,
+        .pig li {
+            color: pink;
+        }
+
+        .bald {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>反正有那么多时间</div>
+    <!-- 后代选择器 -->
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+    </ul>
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">我是ul的孩子</a></li>
+        <li><a href="#">我是ul的孩子</a></li>
+        <li><a href="#">我是ul的孩子</a></li>
+    </ul>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">我是孙子</a></li>
+    </ol>
+    <!-- 子元素选择器 -->
+    <div class="son">
+        <a href="#">我是儿子</a>
+        <p>
+            <a href="#">我是孙子</a>
+        </p>
+
+        <!-- 并集选择器 -->
+        <div class="big">熊大</div>
+        <p>熊二</p>
+
+        <div class="bald">光头强</div>
+
+        <ul class="pig">
+            <li>小猪佩奇</li>
+            <li>猪爸爸</li>
+            <li>猪妈妈</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
