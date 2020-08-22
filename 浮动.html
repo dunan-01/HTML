@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        /* 1. */
+        /* .left,
+        .right {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            float: left
+        }
+
+        .right {
+            float: right;
+        } */
+
+        /* 2. */
+        /* .box1 {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+        } */
+
+        /* 3. */
+        /* .box {
+            width: 800px;
+            height: 460px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .left {
+            height: 460px;
+            width: 230px;
+            float: left;
+            background-color: purple;
+        }
+
+        .right {
+            width: 570px;
+            height: 460px;
+            float: left;
+            background-color: gray;
+        } */
+
+        /* 4. */
+        /* ul默认有内外边距 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box li {
+            list-style: none;
+            float: left;
+            width: 220px;
+            height: 285px;
+            background-color: purple;
+            margin-right: 14px;
+        }
+
+        .box {
+            width: 922px;
+            height: 285px;
+            margin: 0 auto;
+            background-color: pink;
+
+        }
+
+        .box .last {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1. -->
+    <!-- <div class="left">左青龙</div>
+    <div class="right">右白虎</div> -->
+
+    <!-- 2. -->
+    <!-- <div class="box1">浮动的盒子</div> -->
+    <!-- <div class="box2">标准流的盒子</div> -->
+
+    <!-- 3.练习1 -->
+
+    <!-- <div class="box">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div> -->
+
+    <!-- 4.练习2 -->
+    <ul class="box">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="last">4</li>
+    </ul>
+</body>
+
+</html>
