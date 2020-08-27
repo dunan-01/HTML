@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var name = prompt('请输入你的姓名');
+        alert(name);
+        var temp;
+        var apple1 = '青苹果';
+        var apple2 = '红苹果';
+        temp = apple1;
+        apple1 = apple2;
+        apple2 = temp;
+        console.log(apple1);
+        console.log(apple2);
+
+
+        var age = prompt('请输入你的年龄');
+        var str = '您今年' + age + '岁啦';
+        alert(str);
+
+        //undefined
+        var variable = undefined;
+        console.log(variable + pink); //undefinedpink
+        console.log(variable + 1);// NaN undefined和数字相加得到 NaN
+
+        //null空值
+        var space = null;
+        console.log(space + 'pink'); //nullpink
+        console.log(space + 1);// 1
+
+        //检测字符类型
+        var num = 10;
+        console.log(typeof num);// 数字类型
+        var col = pink;
+        console.log(typeof col);//string类型
+
+        //prompt 取过来的值是字符型的
+        var age1 = prompt('请输入你的年龄');
+        console.log(age1);
+        console.log(typeof age1);//string
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
