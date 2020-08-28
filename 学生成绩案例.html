@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var num = prompt('请输入学生人数');
+        // var average = 0;
+        // var sum = 0;
+        // for (var i = 1; i <= num; i++) {
+        //     var score = console.log('请输入第' i + '个学生的成绩');
+        //     //因为从prompt取过来的字符型的所以要把转换成数字型的
+
+        //     sum += parseFloat(score);
+        // }
+        // average = sum / num;
+        // alert('平均分是' + average);
+
+
+        // //打印五行星星
+        // str = '';
+        // for (var i = 1; i <= 5; i++) {
+        //     for (var j = 1; j <= 5; j++) {
+        //         str = str + '☆';
+
+        //     }
+        //     str = str + '\n';
+        // }
+        // console.log(str);S
+
+        //打印倒三角形案例
+
+        // var str = '';
+        // for (var i = 1; i <= 10; i++) {
+        //     for (var j = i; j <= 10; j++) {
+        //         str = str + '☆';
+
+        //     }
+        //     str = str + '\n';
+        // }
+        // console.log(str);
+
+        //九九乘法表
+
+        var str = '';
+        for (var i = 1; i <= 9; i++) {
+            for (var j = 1; j <= i; j++) {
+                str += j + '×' + i + '=' + i * j + '\t';
+            }
+            str += '\n';
+        }
+        console.log(str);
+
+        //continue
+        for (var i = 1; i <= 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            console.log('我正在吃第' + i + '个包子');
+        }
+
+        //求1~100之间，除了能被7整除的整数和
+        var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            if (i % 7 == 0) {
+                continue;
+            }
+            sum += i;
+        }
+        console.log(sum);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

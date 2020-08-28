@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //  1.parseInt()转换为整数
+        // var age = prompt('请输入你的年龄');
+        // console.log(parseInt(sge));
+        console.log(parseIny('3.12'));  //3
+        console.log(parseIny('3.89'));  //3 取整
+        console.log(parseIny('120px'));  //120 
+        console.log(parseFloat('rem120px'));//NaN
+
+        // 2.parseFloat()转换为浮点数
+        console.log(parseFloat('3.14'));//3.14  浮点数
+        console.log(parseFloat('120px'));//120
+        console.log(parseFloat('rem120px'));//NaN
+
+        //3. Number()
+        var str = '123';
+        console.log(Number(str));
+
+        // 4.数值运算- * /
+        console.log('12' - 0);//12
+        console.log('123' - '120'); //3
+        console.log('123' * 1); //123
+
+        //计算年龄案例
+        var year = prompt('请输入您的出生年份');
+        var age = 2020 - year;//取过来的是字符型，减号存在隐式转换
+        alert('您今年已经' + age + '岁啦');
+
+        //简单加法器案例
+        var num1 = prompt('请您输入第一个数字');
+        var num2 = prompt('请您输入第二个数字');
+        var result = parseFloat(num1) + parseFloat(num2);
+        alert('您的结果是' + reuslt);
+
+        //Boolean类型
+        console.log(Boolean(''));//false
+        console.log(Boolean(0));//false
+        console.log(Boolean(NaN));//false
+        console.log(Boolean(null));//false
+        console.log(Boolean(undefined));//false
+
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
