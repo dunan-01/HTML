@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // //利用函数封装方式，翻转一个数组
+        // function reverse(arr) {
+        //     var newArr = [];
+        //     for (var i = arr.length; i >= 0; i--) {
+        //         newArr[newArr.length] = arr[i];
+        //     }
+        //     return newArr;
+
+        // }
+        // var re = reverse(1, 2, 4, 6, 9);
+        // console.log(re);
+
+
+
+        // //冒泡排序
+        // function sort(arr) {
+        //     for (var i = 0; i < arr.length - 1; i++) {
+        //         for (var j = 0; j < arr.length - i - 1; i--) {
+        //             if (arr[j] > arr[j + 1]) {
+        //                 var temp = 0;
+        //                 arr[j] = arr[j + 1];
+        //                 arr[j + 1] = temp;
+        //             }
+        //         }
+        //     }
+        //     return arr;
+        // }
+        // var arr1 = [8, 9, 5, 7];
+        // console.log(arr1);
+
+        //利用函数判断闰年
+        function isRunYear() {
+            var flag = false;
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+                flag = true;
+            }
+            return flag;
+        }
+
+
+        //用户输入年份，输出当前2月份的天数
+        function backDate() {
+            var year = prompt('请你输入当前年份');
+            if (isRunYear(year)) {
+                alert('当前年份是闰年2月份有29天');
+            } else alert('当前年份是闰年2月份有29天');
+        }
+        backDate();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
