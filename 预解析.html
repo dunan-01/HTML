@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // //1问
+        // console.log(num);
+        // //2问
+        // console.log(num);//坑1 undefined
+        // var num = 10;
+
+        // //3问
+        // fn();
+        // function fn() {
+        //     console.log(11);
+        // }
+
+        // //4问
+        // fun(); //报错，坑2
+        // var fun = function () {
+        //     console.log(22);
+
+        // }
+
+        //我们把js引擎运行js分为两步： 预解析 代码执行
+        // 预解析会把js里面的所有的var 和function 提升到当前作用域的最前面
+        // 代码执行 从上至下
+        // 预解析 分为变量预解析 和 函数预解析
+        // 变量提升 就是把所有的变量声明提升到当前作用域的最前面 不提升赋值操作
+        // 函数提升 就是把所有的函数声明提升到当前作用域的最前面 不提升函数
+
+
+        f1();
+        console.log(c);
+        console.log(b);
+        console.log(a);
+
+        function f1() {
+            var a = b = c = 9;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+
+        // 99999报错
+
+        // // 以下代码
+        // function f1() {
+        //     var a;
+        //     a = b = c = 9;
+        //     //相当于 var a =9;b=9;c=9; b和c 直接复制，没有 var 声明 当 全局变量
+        //     //集体声明 var a=9,b=9,c=9;
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // }
+
+        // f1();
+        // console.log(c);
+        // console.log(b);
+        // console.log(a);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
