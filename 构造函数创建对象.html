@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 构造函数  明星 泛指某一大类 相当于java中的类
+        function Star(uname, age, sex) {  //构造函数名字首字母大写
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            this.sing = function (song) {
+                console.log(song);
+            }
+        }
+        var ldh = new Star('刘德华', 18, '男');
+        console.log(typeof (ldh)); //调用函数返回的是一个对象
+        ldh.sing('冰雨');
+
+        var zxy = new Star('张学友', 18, '男');
+        console.log(zxy.name);
+        zxy.sing('李香兰');
+
+        //构造函数不需要return 就可以返回结果
+        // 我们调用构造函数必须要用new
+        // 我们只要new Star 调用函数就创建一个对象ldh {}
+        // 我们的属性和方法前面必须添加this
+        // 我们利用构造函数创建的对象的过程 也称为对象的实例化
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

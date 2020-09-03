@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+
+        //1.对象字面量
         var obj = {
             uname: '张三丰',
             age: 18,
@@ -24,6 +26,35 @@
         console.log(obj['age']);
         //调用sayHi 对象名.方法名 千万别忘记小括号
         obj.sayHi();
+
+        // 2.new Object 方法
+        // var obj = new Object();
+        // obj.age = 18;
+        // obj.uname = '张三';
+        // obj.sayHi = function () {
+        //     console.log('hi~');
+        // };
+        // //1.我们是利用等号赋值的方法添加属性和方法的
+        // //2.每个属性和方法之间用分号结束
+        // console.log(obj.age);
+        // console.log(obj['uname']);
+        // obj.sayHi;
+
+
+        //3.利用构造函数创建对象
+        // 因为我们一次创建一个对象，里面的很多属性和方法都是相同的，我们只能复制
+        // 因此我们可以利用构造函数的方法，重复这些代码，就把这个函数称为 构造函数
+        // 这个函数不一样， 里面封装的不是普通代码，是对象
+        // 构造函数 就是我们对象里面一些相同属性和方法抽象出来封装到函数里面
+
+
+        // 遍历对象
+        for (var k in obj) {
+            console.log(k);//k 变量输出 得到的是 属性名
+            console.log(obj[k]);// 得到的是属性值
+        }
+
+
     </script>
 </head>
 
