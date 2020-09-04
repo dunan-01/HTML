@@ -10,6 +10,67 @@
         console.log(Math.max(1, 65, 4));//65
         console.log(Math.max(2, 88, 'pink老师'));//NaN
         console.log(Math.max());// -Infinity
+
+        //绝对值方法
+        console.log(Math.abs(1));//1
+        console.log(Math.abs(-1));//1
+        console.log(Math.abs('-1'));//隐式转换 会把字符型转换成数字型
+        console.log(Math.abs('pink'));//NaN
+
+        //取整
+        //（1） Math.floor() 向下取整 往小了取
+        console.log(Math.floor(1.1));//1
+        console.log(Math.floor(1.9));//1
+        //（2） Math.ceil() 向上取整 往大了取
+        console.log(Math.ceil(1.1));//2
+        console.log(Math.ceil(1.9));//2
+        //(3)  Math.round() 四舍五入  .5 往大了取
+        console.log(Math.round(1.1));//1
+        console.log(Math.round(1.5));//2
+        console.log(Math.round(1.9));//2
+        console.log(Math.round(-1.1));//-1
+        console.log(Math.round(-1.5));//-1
+
+        var myMath = {
+            PI: 3.141592653,
+            max: function () {
+                var max = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                    if (arguments[i] > max)
+                        max = arguments[i];
+                }
+                return max;
+            },
+
+            min: function () {
+                var min = arguments[0];
+                for (var i = 1; i < arguments.length; i++) {
+                    if (arguments[i] < min)
+                        min = arguments[i];
+                }
+                return min;
+            },
+        }
+
+        console.log(myMath.PI);
+        console.log(myMath.max(1, 5, 9));
+        console.log(myMath.min(1, 5, 9));
+
+        // Math对象随机数方法 random() 返回一个随机小数 0 <= x < 1
+        // 这个方法不跟参数
+
+        console.log(Math.random());
+
+        // 两个数之间的随机整数 并且包含这两个数
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+
+        }
+        console.log(Math.getrandom(1, 10));
+
+        //随机点名
+        var arr = ['张三', '李四', '王五', '赵四', '老八'];
+        console.log(arr[getrandom(0, arr.length - 1)]);
     </script>
 </head>
 
