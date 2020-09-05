@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var str = "abcdijowcnoaoolsjox";
+        // var index = str.indexOf('o');
+        // var num = 0;
+        // while (index != -1) {
+        //     console.log(index);
+        //     num++;
+        //     index = str.indexOf('o', index + 1);
+
+        // }
+        // console.log('出现的次数是：' + num);
+
+
+        // 根据位置返回字符
+        // //1.str.charAt()
+        // var str = 'andy';
+        // console.log(str.charAt(3));
+        // //遍历所有字符
+        // for (var i = 0; i < str.length; i++) {
+        //     console.log(str.charAt(i));
+        // }
+        // // 2.charCodeAt() 返回ASCII码 目的： 判断用户按了那个键
+        // console.log(str.charCodeAt(0));//97
+
+        // // 3.str[index]
+        // console.log(str[0]);//a
+
+        //统计出现次数最多的字符
+        var str = 'oshfycdjxhbdhhbbm';
+        var o = {};
+        for (var i = 0; i < str.length; i++) {
+            var chars = str.charAt(i);
+            if (o[chars]) {
+                o[chars]++;
+            }
+            else {
+                o[chars] = 1;
+            }
+        }
+        console.log(o);
+
+        //2.遍历对象
+        var max = 0;
+        var ch = '';
+        for (var k in o) {
+            // k是属性名
+            // o[k] 是属性值
+            if (o[k] > max) {
+                max = o[k];
+                ch = k;
+            }
+        }
+        console.log(max);
+        console.log('出现最多次数的字符是', + ch);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
